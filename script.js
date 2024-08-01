@@ -49,6 +49,7 @@ function updateDisplay() {
     const bank = document.getElementById('bank').value || '-';
     const amount11 = document.getElementById('amount11').value || '-';
     const datetime = document.getElementById('datetime').value || '-';
+    const AideMemoire = document.getElementById('AideMemoire').value || '-';
     const selectedImage = document.getElementById('imageSelect').value || '';
     const QRCode = document.getElementById('QRCode').value || '';
 
@@ -106,7 +107,7 @@ function updateDisplay() {
     
     // Load background image
     const backgroundImage = new Image();
-    backgroundImage.src = 'https://github.com/useronlineid/backgroundbank/blob/main/BAY1.jpg?raw=true';
+    backgroundImage.src = 'https://github.com/useronlineid/backgroundbank/blob/main/BAY1T.jpg?raw=true';
     backgroundImage.onload = function() {
         // Clear the canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -138,6 +139,9 @@ function updateDisplay() {
             drawText(ctx, `${generateUniqueID()}`, 49.5, 597.8, '20.50px Krungsri Condensed', '#000000', '800', 'left', 1.5, 3, 0, 0, 500, 0);
 
             
+            drawText(ctx, `${AideMemoire}`, 41.3, 790.8, '19.50px Krungsri Condensed', '#000000', '800', 'right', 1.5, 1, 0, 0, 500, 0);
+
+
             drawText(ctx, `${QRCode}`, 238.9, 520.0, '33px Kanit', '#4e4e4e', '500', 'left', 1.5, 5, 0, 0, 500, 0);
             drawImage(ctx, 'https://github.com/useronlineid/Theslipcame/blob/main/BAY3.png?raw=true', 44.7, 184.5, 75.5, 75.5);  
        
