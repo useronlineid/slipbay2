@@ -130,7 +130,7 @@ function updateDisplay() {
             drawText(ctx, `${receiveraccount}`, 44.3, 373.0, '20.5px Krungsri Condensed', '#848583', '500', 'right', 1.5, 1, 0, 0, 500, -0.50);
             
             
-            drawText(ctx, `${amount11} THB`, 41.3, 454.8, '32.7px Krungsri Condensed', '#000000', '800', 'right', 1.5, 1, 0, 0, 500, 0.25);
+            drawText(ctx, `${amount11} THB`, 41.3, 454.8, '32.7px Krungsri Condensed', '#000000', '800', 'right', 1.5, 1, 0, 0, 500, -0.25);
             drawText(ctx, `0.00 THB`, 44.3, 495.4, '20.5px Krungsri Condensed', '#848583', '400', 'right', 1.5, 1, 0, 0, 500, 0.25);
             
             
